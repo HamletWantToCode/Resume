@@ -1,0 +1,64 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{任宏斌}
+
+\basicInfo{
+  \email{hongbinrenscu@outlook.com} \textperiodcentered\ 
+  \phone{(+86) 18601282657} \textperiodcentered\ 
+  \github{hamletwanttocode}}
+
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{中国科学院大学(UCAS)}, 北京, 中国}{2015.09 至今}
+\textit{博士}\, 理论与计算物理, 计划毕业时间 2021.06
+\datedsubsection{\textbf{台湾大学(NTU)}, 台北, 中国}{2013.09 -- 2014.02}
+\textit{交换生}\, 物理学系
+\datedsubsection{\textbf{四川大学(SCU)}, 成都, 中国}{2011.09 -- 2015.06}
+\textit{学士}\, 物理学
+
+\section{\faUsers\ 科研经历}
+\datedsubsection{\textbf{中科院物理研究所}, 北京, 中国}{2015.09 至今}
+\role{科研助理}{导师: 戴希教授，王磊研究员}
+\begin{itemize}
+  \item 高斯过程应用于无轨道密度泛函理论中动能泛函的拟合
+  \begin{itemize}
+    \item 设计出一种同时利用函数输出及输出关于输入的一阶导数训练高斯过程的算法，训练出的模型可以同时准确预测物理系统的动能及动能关于电子密度的一阶导数
+    \item 通过使用基于梯度的优化方法确定高斯过程的超参数（梯度由自动微分获得），在保持精度的前提下，使得模型的训练时间相比从前的工作（遍历搜索）\textbf{缩短了80\%}
+  \end{itemize}
+  \item 科学机器学习及其在量子化学中的应用
+  \begin{itemize}
+    \item 使用\textit{Julia}编程语言开发了可微分量子力学编程库\textit{QuantumLang.jl}
+    \item 利用\textit{QuantumLang.jl}实现了全变分的基于密度矩阵的哈特利-福克算法，避免了传统算法中对自洽收敛性的处理过程
+    \item 在基态能量的计算中，可以使用较小的基函数数目（大约为正常情况的\textbf{50\%}）获得接近于正常基函数数目情况下的结果
+    \item 我们的算法及实现可以在获得同样/更好的结果的情况下，比之前发表的算法有\textbf{10}倍效率提升
+  \end{itemize}
+\end{itemize}
+
+\section{\faUsers\ 社会实践}
+\datedsubsection{\textbf{北京高思教育集团}, 北京, 中国}{2016.04 -- 2018.06}
+\role{高中物理教师}{}
+\begin{itemize}
+  \item 在原有基础上，设计出一套高中物理授课方式，通过\textit{Python}编程将抽象的物理概念可视化
+  \item 通过个性化的辅导及同学生家长的有效沟通，使得班上70人中\textbf{40\%}的同学期中/期末考试成绩有明显提升
+  \item 在升班季升班率最高可以达到\textbf{80\%}，在公司所有高中物理老师中排名前\textbf{5\%}
+\end{itemize}
+
+\section{\faCogs\ 编程及开源贡献}
+\begin{itemize}[parsep=0.5ex]
+  \item Python, Julia
+  \item 编写了可微分高斯过程库\textit{GPFlux.jl}以及量子力学库\textit{QuantumLang.jl}
+  \item 为\textit{Stheno.jl} (github 200 stars)编写了基于神经网络的核函数代码以及教程，有\textbf{2}次 merged PRs
+\end{itemize}
+
+\section{\faHeartO\ 所获奖励}
+\datedline{中科院物理所所长表彰奖}{2017}
+\datedline{四川省优秀毕业生}{2015}
+\datedline{四川大学校级一等奖学金}{2013}
+
+\end{document}
