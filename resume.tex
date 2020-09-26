@@ -18,11 +18,12 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
-%\usepackage[UTF8]{ctex}
+\documentclass[14pt, a4paper]{awesome-cv}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
+\usepackage{amsmath}
+\usepackage{enumitem}
+\setlist{topsep=4pt}
 % Specify the location of the included fonts
 \fontdir[fonts/]
 
@@ -58,7 +59,7 @@
 
 \mobile{(+86) 18601282657}
 \email{hongbinrenscu@outlook.com}
-\homepage{https://hamletwanttocode.github.io/}
+% \homepage{https://hamletwanttocode.github.io/}
 \github{hamletwanttocode}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
@@ -94,9 +95,8 @@
 \input{education.tex}
 \input{academic-experience.tex}
 \input{social-experience.tex}
+\input{skill.tex}
 \input{honors.tex}
-\input{presentation.tex}
-\input{extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
